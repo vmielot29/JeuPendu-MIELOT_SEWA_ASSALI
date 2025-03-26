@@ -7,9 +7,13 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Dialog;
+import javafx.scene.control.DialogPane;
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 
 //import java.util.ArrayList;
 
@@ -75,16 +79,21 @@ public class ControleurIntroduction {
 				 DialogueQuitter.getButtonTypes().add(bOK);
 				 DialogueQuitter.setTitle("Règles Pendu");
 				 DialogueQuitter.setHeaderText(null);
-				 DialogueQuitter.setContentText("Règles");
+				 DialogueQuitter.setContentText(null);
+			
 				 /*******************************************
 				  * Creation de la vbox pour les élements
 				  *******************************************/
 				 Image image = new Image(getClass().getResourceAsStream("/ressources/imageRegles.png"));
 				 imagesRegles.setImage(image);
-				 imagesRegles.setFitWidth(300);
-				 imagesRegles.setFitHeight(500);
+				 imagesRegles.setFitWidth(400);
+				 imagesRegles.setFitHeight(650);
 				 imagesRegles.setPreserveRatio(true);
+				 //
+				 Label titre = new Label("Le Pendu\nRègles");
+			     titre.setStyle("-fx-text-fill: white; -fx-font-size: 50px; -fx-font-family:Chiller;");
 				 VBox conteneur = new VBox(50);
+				 conteneur.getChildren().add(titre);
 				 //on veut que les elements soit : CENTER
 				 conteneur.setAlignment(Pos.CENTER);
 				 conteneur.getChildren().add(imagesRegles);

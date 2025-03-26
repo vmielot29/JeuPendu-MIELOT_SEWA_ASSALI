@@ -9,6 +9,10 @@
 
 .dialog-pane{
 	-fx-background-color: black;
+	-fx-text-fill: white;
+	-fx-font-family: "Chiller";
+	-fx-font-size: 20px;
+	
 }
 
 .dialog-pane .button{
@@ -16,10 +20,6 @@
 	-fx-text-fill: black;
 	-fx-font-family: "Chiller";
 	-fx-font-size: 20px;
-}
-
-.dialog-pane .header-panel {
-    -fx-alignment: center;           
 }
 
 
