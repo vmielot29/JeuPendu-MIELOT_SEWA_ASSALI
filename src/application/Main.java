@@ -3,9 +3,11 @@ package application;
 import java.io.File;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 
@@ -14,6 +16,9 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+			//on va charger le fichier .XML
+			Pane root = FXMLLoader.load(
+							getClass().getResource("/interfacesFXML/introductionJeu.FXML"));
 			/*******************************************************
 			 * on va charger le fichier son.
 			 * on s'est aidé de: https://www.delftstack.com/fr/howto/java/javafx-media-player/ 
@@ -22,7 +27,7 @@ public class Main extends Application {
 			 * de la changer pour eviter un quelconque soucis
 			 * 
 			 ****************************************************/
-			String path = new File("src/son.mp3").toURI().toString();
+			String path = new File("src/ressources/son.mp3").toURI().toString();
 	        Media media = new Media(path);
 	        MediaPlayer mediaPlayer = new MediaPlayer(media);
 	        /*pour la lecture en boucle, voici la source qui nous a inspiré
@@ -33,7 +38,6 @@ public class Main extends Application {
 	        
 	       //ajout d'un titre pour faire propre
 	        primaryStage.setTitle("Le Pendu par MIELOT Vincent, SEWA Adjetey et ASSALI Fatima Ezzahra");
-			BorderPane root = new BorderPane();
 			Scene scene = new Scene(root,1000,750);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
