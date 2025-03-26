@@ -1,9 +1,26 @@
 /* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
 .button {
-	-fx-background-color: black;
-	-fx-text-fill: black; 
+	-fx-background-color:#E6E6E6;
+	-fx-text-fill: black;
+	-fx-font-family: "Chiller";
+	-fx-font-size: 20px;
+	 
 }
 
 .dialog-pane{
 	-fx-background-color: black;
 }
+
+.dialog-pane .button{
+	-fx-background-color:#E6E6E6;
+	-fx-text-fill: black;
+	-fx-font-family: "Chiller";
+	-fx-font-size: 20px;
+}
+
+.dialog-pane .header-panel {
+    -fx-alignment: center;           
+}
+
+
+

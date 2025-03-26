@@ -74,12 +74,12 @@ public class ControleurIntroduction {
 				 DialogueQuitter.getButtonTypes().clear();
 				 DialogueQuitter.getButtonTypes().add(bOK);
 				 DialogueQuitter.setTitle("Règles Pendu");
-				 DialogueQuitter.setHeaderText("Le Pendu");
+				 DialogueQuitter.setHeaderText(null);
 				 DialogueQuitter.setContentText("Règles");
 				 /*******************************************
 				  * Creation de la vbox pour les élements
 				  *******************************************/
-				 Image image = new Image(getClass().getResourceAsStream("src/ressources/ImagesRegles/imageRegles.png"));
+				 Image image = new Image(getClass().getResourceAsStream("/ressources/imageRegles.png"));
 				 imagesRegles.setImage(image);
 				 imagesRegles.setFitWidth(300);
 				 imagesRegles.setFitHeight(500);
@@ -92,6 +92,8 @@ public class ControleurIntroduction {
 				 DialogueQuitter.getDialogPane().setContent(conteneur);
 				 //on va mettre la taille qu'on a choisi par défaut (1000,750)
 				 DialogueQuitter.getDialogPane().setPrefSize(1000, 750);
+				 //ajout de la feuille CSS
+				 DialogueQuitter.getDialogPane().getStylesheets().add(getClass().getResource("/application/application.css").toExternalForm());
 				 //pas oublier de mettre la boite de dialogue en mode showandWait
 				 DialogueQuitter.showAndWait();
 		 }catch(Exception e) {
