@@ -7,47 +7,46 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="controleur.ControleurIntroduction">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="750.0" prefWidth="1000.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controleur.ControleurIntroduction">
    <children>
-      <ImageView fitHeight="297.0" fitWidth="387.0">
+      <ImageView fitHeight="497.0" fitWidth="663.0">
          <image>
             <Image url="ressources/introductionJeu.png" />
          </image>
       </ImageView>
-      <Text fill="WHITE" layoutX="431.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Pendu" textAlignment="CENTER" wrappingWidth="110.4554443359375">
+      <Text fill="WHITE" layoutX="616.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Le Pendu" textAlignment="CENTER" wrappingWidth="369.6553955078125">
          <font>
-            <Font name="Chiller" size="38.0" />
+            <Font name="Chiller" size="60.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="402.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trouvez le mot magique pour sauver Bob avant qu'il ne soit trop tard " wrappingWidth="169.6553955078125">
+      <Text fill="WHITE" layoutX="681.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Trouvez le mot magique pour sauver Bob avant qu'il ne soit trop tard " wrappingWidth="288.8553466796875">
          <font>
-            <Font name="Chiller" size="14.0" />
+            <Font name="Chiller" size="30.0" />
          </font>
       </Text>
-      <Button fx:id="boutonJouer" layoutX="427.0" layoutY="176.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: E6E6E6;" text="Jouer">
+      <Button fx:id="boutonJouer" layoutX="744.0" layoutY="425.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: E6E6E6;" text="Jouer" onAction="#gestionJouer">
          <font>
             <Font name="Chiller" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="boutonRegles" layoutX="426.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: E6E6E6;" text="Règles du jeu" onAction="#ouvrirRegle">
+      <Button fx:id="boutonRegles" layoutX="744.0" layoutY="547.0" mnemonicParsing="false" onAction="#ouvrirRegle" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: E6E6E6;" text="Règles du jeu">
          <font>
             <Font name="Chiller" size="14.0" />
          </font>
       </Button>
-      <Button fx:id="boutonQuitter" layoutX="426.0" layoutY="223.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: E6E6E6;" text="Quitter" onAction="#quitterLeJeu">
+      <Button fx:id="boutonQuitter" layoutX="744.0" layoutY="486.0" mnemonicParsing="false" onAction="#quitterLeJeu" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: E6E6E6;" text="Quitter">
          <font>
             <Font name="Chiller" size="14.0" />
          </font>
       </Button>
-      <Button layoutX="427.0" layoutY="320.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: E6E6E6;" text="Paramètres">
+      <Button layoutX="744.0" layoutY="608.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="139.0" style="-fx-background-color: E6E6E6;" text="Paramètres">
          <font>
             <Font name="Chiller" size="14.0" />
          </font>
       </Button>
-      <Text fill="WHITE" layoutX="19.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bob a été accusé à tort d’avoir volé le trésor du roi. Jeté en prison, il attend son exécution… Mais le bourreau lui laisse une chance : si quelqu’un trouve le mot caché, Bob sera sauvé ! À toi de jouer, devine le mot avant qu’il ne soit trop tard !" wrappingWidth="374.9667663574219">
+      <Text fill="WHITE" layoutX="14.0" layoutY="564.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bob a été accusé à tort d’avoir volé le trésor du roi. Jeté en prison, il attend son exécution… Mais le bourreau lui laisse une chance : si quelqu’un trouve le mot caché, Bob sera sauvé ! À toi de jouer, devine le mot avant qu’il ne soit trop tard !" wrappingWidth="655.800048828125">
          <font>
-            <Font name="Chiller" size="15.0" />
+            <Font name="Chiller" size="30.0" />
          </font>
       </Text>
    </children>
