@@ -94,9 +94,9 @@ public class ControleurIntroduction {
 		 	 
 	}
 	
-	
+	//ajout du throws car quand j'ai ecris loader.load, eclipse m'a dit d'ajouter 
 	@FXML
-	public void gestionJouer() throws IOException {
+	public void gestionJouer() throws IOException  {
 		FXMLLoader loader = new FXMLLoader(getClass().getResource("/interfacesFXML/fenetreAvatar.FXML"));
         Parent root = loader.load();
         // ici on va recuperer le controleur associé au FXML
